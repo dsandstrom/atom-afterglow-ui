@@ -1,4 +1,5 @@
 @import "syntax-variables";
+@import "colors";
 
 // ONE dark UI variables
 // -----------------------------------
@@ -19,7 +20,7 @@
 @ui-a-s:     min( saturation(@ui-a), 12%);
 @ui-a-l:     luma(@ui-a) + 100%; // (1) light up
 @ui-a-light: hsl(@ui-a-h, @ui-a-s, @ui-a-l); // (2) flashed color
-@ui-a-color: contrast(@ui-a-light, @ui-a, hsl(@ui-a-h, @ui-a-s, 24%) ); // (3) use @ui-a if darker than 24%
+@ui-a-color: @jet; // (3) use @ui-a if darker than 24%
 
 
 // Config -----------------------------------
@@ -32,7 +33,7 @@
 
 // Base colors -----------------------------------
 
-@base-accent-color:     hsl(@ui-hue, @ui-saturation + 70%, @ui-lightness + 40%);
+@base-accent-color:     @tuscany;
 @base-background-color: @ui-color;
 @base-border-color:     hsl(@ui-hue, @ui-saturation, @ui-lightness*.7);
 
@@ -44,7 +45,8 @@
 
 @level-1-color: lighten(@base-background-color, 6%);
 @level-2-color: @base-background-color;
-@level-3-color: darken(@base-background-color, 3%);
+// @level-3-color: darken(@base-background-color, 3%);
+@level-3-color: @cod-gray;
 
 
 // Var + State Background Colors -------------------------------------
@@ -62,7 +64,7 @@
 
 @app-background-color:             darken(@level-3-color, 2%);
 
-@tree-view-background-color:       @level-3-color;
+@tree-view-background-color:       @mine-shaft;
 @tree-view-border-color:           @base-border-color;
 
 @tab-background-color:             @level-3-color;
@@ -128,16 +130,16 @@
 
 // Text Colors -------------------------------------
 
-@text-color: hsl(@ui-hue, min(40%, @ui-saturation), max(50%, @ui-lightness * 3) );
+@text-color: @gainsboro;
 @text-color-subtle: fadeout(@text-color, 40%);
 @text-color-faded: fade(@text-color, 20%);
 @text-color-highlight: hsl(@ui-hue, @ui-saturation*8, 88%);
-@text-color-selected: white;
+@text-color-selected: @silver;
 
-@text-color-info:    hsl(219,  79%, 66%);
-@text-color-success: hsl(140,  44%, 62%);
-@text-color-warning: hsl( 36,  60%, 72%);
-@text-color-error:   hsl(  9, 100%, 64%);
+@text-color-info:    @hippie-blue;
+@text-color-success: @wild-willow;
+@text-color-warning: @equator;
+@text-color-error:   @tuscany;
 
 @text-color-added:    @text-color-success;  // green
 @text-color-ignored:  @text-color-subtle;   // faded
@@ -160,7 +162,7 @@ html { font-size: 11px; }   // base font-size
 @component-icon-size:     16px; // needs to stay 16px to look sharpest
 @component-border-radius: 3px;
 
-@tab-height:              @component-padding*2;
+@tab-height:              @component-padding*2.3;
 
 
 // Font -------------------------------------

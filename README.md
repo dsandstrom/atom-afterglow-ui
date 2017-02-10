@@ -5,7 +5,7 @@ A minimal dark syntax theme converted from [Afterglow](https://github.com/Yabata
 
 I made a UI theme to match the syntax theme that looks similar to the Sublime Text version.  However, I took some liberties and not really finished.  I decided to upload what I have and hope that will push me to spend more time perfecting it.  
 
-![Afterglow UI](https://cloud.githubusercontent.com/assets/1400414/22800407/27a0bee8-eebe-11e6-91bd-e4ca83ace215.png)
+![Afterglow UI](https://cloud.githubusercontent.com/assets/1400414/22841541/ddbdfc54-ef86-11e6-8637-32ac6546aa8f.png)
 
 ### Notes
 * Made to match [Afterglow Syntax](https://atom.io/packages/afterglow-syntax)

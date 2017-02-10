@@ -25,6 +25,7 @@ atom-panel.modal {
     li {
       padding: @modal-padding;
       border-bottom: 1px solid @overlay-border-color;
+      overflow: hidden;
 
       &:last-of-type {
         border-bottom: none;
@@ -36,6 +37,11 @@ atom-panel.modal {
         &:before {
           margin-right: 0;
         }
+      }
+
+      &,
+      pre {
+        overflow: hidden;
       }
     }
   }

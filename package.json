@@ -1,7 +1,7 @@
 {
   "name": "afterglow-ui",
   "theme": "ui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Afterglow UI",
   "license": "MIT",
   "repository": "https://github.com/dsandstrom/atom-afterglow-ui",

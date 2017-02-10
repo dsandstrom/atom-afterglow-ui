@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.3.0
+_Febrary 10, 2017_
+* Fix pre font size
+
 ### 0.2.0
 _Febrary 10, 2017_
 * Move tab color to top

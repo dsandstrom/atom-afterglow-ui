@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.4.0
+_Febrary 10, 2017_
+* Fix modal icon/overflow
+
 ### 0.3.0
 _Febrary 10, 2017_
 * Fix pre font size

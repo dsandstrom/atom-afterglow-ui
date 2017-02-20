@@ -7,33 +7,33 @@ atom-workspace {
 }
 
 // Scrollbars
-.scrollbars-visible-always {
-	/deep/ ::-webkit-scrollbar {
+atom-workspace {
+	::-webkit-scrollbar {
 		width: 1em;
 		height: 1em;
 	}
 
-	/deep/ ::-webkit-scrollbar-track {
+	::-webkit-scrollbar-track {
 		background: @scrollbar-background-color;
 	}
 
-	/deep/ ::-webkit-scrollbar-thumb {
+	::-webkit-scrollbar-thumb {
 		background: @scrollbar-color;
 		background-clip: content-box;
 	}
 
-	/deep/ ::-webkit-scrollbar-corner {
+	::-webkit-scrollbar-corner {
 		background: @scrollbar-background-color;
 	}
 
-	/deep/ ::-webkit-scrollbar-thumb:vertical {
+	::-webkit-scrollbar-thumb:vertical {
 		&:hover,
 		&:active {
 			background: @scrollbar-active-color;
 		}
 	}
 
-	/deep/ ::-webkit-scrollbar-thumb:horizontal:active {
+	::-webkit-scrollbar-thumb:horizontal:active {
 		border-radius: 0;
 		border-top-width: 0;
 		border-bottom-width: 0;

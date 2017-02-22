@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.5.0
+_Febrary 22, 2017_
+* Fix scrollbars
+
 ### 0.4.0
 _Febrary 10, 2017_
 * Fix modal icon/overflow

@@ -10,7 +10,6 @@ atom-workspace {
 atom-workspace {
 	::-webkit-scrollbar {
 		width: 1em;
-		height: 1em;
 	}
 
 	::-webkit-scrollbar-track {
@@ -26,17 +25,11 @@ atom-workspace {
 		background: @scrollbar-background-color;
 	}
 
-	::-webkit-scrollbar-thumb:vertical {
+	::-webkit-scrollbar-thumb {
 		&:hover,
 		&:active {
 			background: @scrollbar-active-color;
 		}
-	}
-
-	::-webkit-scrollbar-thumb:horizontal:active {
-		border-radius: 0;
-		border-top-width: 0;
-		border-bottom-width: 0;
 	}
 }
 

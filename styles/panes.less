@@ -25,10 +25,11 @@ atom-pane-container {
 }
 
 atom-pane {
-  atom-text-editor {
+  atom-text-editor:not(.mini) {
     .gutter-container,
     .scroll-view {
-      margin: 6px 0;
+      // FIXME: gutter shadow doesn't go to the top
+      margin-top: 6px;
     }
   }
 }

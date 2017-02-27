@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.6.0
+_Febrary 27, 2017_
+* Panel/scrollbar improvements
+
 ### 0.5.0
 _Febrary 22, 2017_
 * Fix scrollbars

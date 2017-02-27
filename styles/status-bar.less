@@ -5,6 +5,23 @@
   font-size: @font-size;
   height: @status-bar-height;
   line-height: @status-bar-height;
+  color: @status-bar-text-color;
+
+  a {
+    color: @status-bar-anchor-color;
+
+    &:hover {
+      color: @status-bar-anchor-hover-color;
+    }
+  }
+
+  .cursor-position a {
+    color: @status-bar-anchor-color;
+
+    &:hover {
+      color: @status-bar-anchor-hover-color;
+    }
+  }
 
   .flexbox-repaint-hack {
     padding: 0 @status-bar-padding/2;
@@ -14,6 +31,7 @@
     margin-right: @status-bar-padding;
     vertical-align: top;
   }
+
   .pull-right {
     .inline-block {
       margin-right: 0;
@@ -22,6 +40,7 @@
         margin-left: 0;
       }
     }
+
     .icon {
       margin-right: @status-bar-padding/4;
     }
@@ -31,5 +50,21 @@
     font-size: 16px; // keeps them sharp
   	width: 16px;
     height: 16px;
+  }
+
+  &:hover {
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: @status-bar-anchor-hover-color;
+      }
+    }
+  }
+}
+
+.toggle-packages-wrapper {
+  a.text-subtle {
+    color: @charcoal;
   }
 }

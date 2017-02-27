@@ -2,7 +2,6 @@
 
 // find-and-replace ---------------------------
 .find-and-replace {
-
   .btn,
   .btn-group-options.btn-group .btn,
   .btn-group-options.btn-group .btn.option-selection,
@@ -13,22 +12,30 @@
 
   .btn-group {
     &.btn-group-options {
-      width: @font-size * 10;
-      display: flex;
+      width: 14em;
+
       & > .btn {
         flex: 1;
+        min-height: 29px;
       }
+
       .btn.option-selection {
         padding-top: 0;
       }
     }
+
     &.btn-group-replace-all {
       width: @font-size * 10;
     }
+
     &.btn-group-find,
     &.btn-group-replace {
       width: @font-size * 7.5;
     }
+  }
+
+  .options-label .options {
+    margin-right: 1.5em;
   }
 
   // atom-text-editor[mini]

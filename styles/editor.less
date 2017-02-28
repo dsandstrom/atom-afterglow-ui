@@ -24,6 +24,10 @@ atom-text-editor[mini] {
   &.is-focused.editor {
     .focus();
     background-color: @input-background-color-focus;
+
+    border-color: @input-border-color-focus;
+    box-shadow: none;
+
     .selection .region {
       background-color: @input-selection-color-focus;
     }

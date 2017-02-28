@@ -57,17 +57,18 @@ body .settings-view {
 			}
 		}
 
-		&.is-focused,
-		&.is-focused::shadow {
+		&.is-focused {
 			.focus();
 			background-color: darken(@input-background-color, 2%);
 
 			.placeholder-text {
 				color: @text-color-subtle;
 			}
+
 			.selection .region {
 				background-color: @background-color-selected;
 			}
+
 			.cursor {
 				border-color: @base-accent-color;
 			}

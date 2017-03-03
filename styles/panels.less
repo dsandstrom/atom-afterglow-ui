@@ -13,11 +13,14 @@ atom-panel {
 .inset-panel {
   position: relative;
   background-color: @inset-panel-background-color;
+  border-radius: 0;
+
   &.bordered {
     border: 1px solid @base-border-color;
     border-radius: @component-border-radius;
   }
-  & .panel-heading {
+
+  .panel-heading {
     border-color: @inset-panel-border-color;
   }
 }

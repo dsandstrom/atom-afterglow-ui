@@ -11,8 +11,8 @@
 
 // Adjust -----------------------------------
 
-@ui-a:       hsl(252, 11%, 18%); // fallback
-@ui-a:       @syntax-background-color;
+@ui-a: @jet; // fallback
+@ui-a: @syntax-background-color;
 
 // Goal: use @syntax-background-color if it's dark enough, otherwise use same hue but stay dark
 // The light up by 100% is done to trick contrast() into picking one of 2 dark colors
@@ -20,7 +20,7 @@
 @ui-a-s:     min( saturation(@ui-a), 12%);
 @ui-a-l:     luma(@ui-a) + 100%; // (1) light up
 @ui-a-light: hsl(@ui-a-h, @ui-a-s, @ui-a-l); // (2) flashed color
-@ui-a-color: @jet; // (3) use @ui-a if darker than 24%
+@ui-a-color: @syntax-background-color; // (3) use @ui-a if darker than 24%
 
 
 // Config -----------------------------------
@@ -62,7 +62,7 @@
 
 // Component Colors -------------------------------------
 
-@app-background-color:             darken(@level-3-color, 2%);
+@app-background-color: darken(@level-3-color, 2%);
 
 @tree-view-background-color:  @mine-shaft;
 @tree-view-border-color:      @base-border-color;
@@ -72,8 +72,9 @@
 @tab-background-color:             @level-3-color;
 @tab-background-color-active:      @level-2-color;
 @tab-bar-background-color:         @level-3-color;
-@tab-bar-border-color:             @base-border-color;
-@tab-border-color:                 @base-border-color;
+@tab-bar-border-color:             @base-border-color; // not used
+@tab-border-color:                 @tab-background-color;
+@tab-border-color-active:          @tab-background-color-active;
 @tab-text-color:                   @text-color-highlight;
 @tab-icon-color:                   @text-color-subtle;
 @tab-inactive-transparency:        .5;

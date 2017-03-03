@@ -27,7 +27,7 @@
     color: @tab-text-color;
     background: @tab-background-color;
     background-clip: padding-box;
-    border-top: 2px solid #1e1e1e;
+    border-top: 2px solid @tab-border-color;
     opacity: @tab-inactive-transparency;
     transition: opacity .3s;
 
@@ -183,9 +183,6 @@
   .tab.active[data-type="TextEditor"] {
     color: @tab-text-color-editor;
     background-color: @tab-background-color-editor;
-    &:after {
-      border-bottom-color: @tab-background-color-editor;
-    }
   }
 
   .placeholder {

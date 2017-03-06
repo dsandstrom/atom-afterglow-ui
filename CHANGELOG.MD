@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.8.0
+_March 6, 2017_
+* Fix tab border when other syntax is used
+
 ### 0.7.0
 _March 3, 2017_
 * Find/tree/modal/scroll improvements

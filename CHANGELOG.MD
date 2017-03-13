@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.9.0
+_March 13, 2017_
+* Improve vim search input and tabs background
+
 ### 0.8.0
 _March 6, 2017_
 * Fix tab border when other syntax is used

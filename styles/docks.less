@@ -1,0 +1,19 @@
+atom-dock {
+  .tool-panel {
+    background: @tree-view-background-color;
+  }
+
+  .tab-bar .tab.active {
+    background: @tree-view-background-color;
+    border-color: @tree-view-background-color;
+  }
+}
+
+.tab-bar {
+  atom-dock & {
+    .tab,
+    .tab.active {
+      max-width: none;
+    }
+  }
+}

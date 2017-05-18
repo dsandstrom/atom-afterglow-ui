@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.11.0
+_May 18, 2017_
+* Update screenshot
+
 ### 0.10.0
 _May 18, 2017_
 * Make tree-view tab color match background

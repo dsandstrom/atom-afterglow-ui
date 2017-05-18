@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.10.0
+_May 18, 2017_
+* Make tree-view tab color match background
+
 ### 0.9.0
 _March 13, 2017_
 * Improve vim search input and tabs background

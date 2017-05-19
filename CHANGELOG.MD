@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.12.0
+_May 19, 2017_
+* Improve spinner
+
 ### 0.11.0
 _May 18, 2017_
 * Update screenshot

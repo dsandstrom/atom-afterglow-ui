@@ -3,6 +3,7 @@
 ### 0.13.0
 _May 22, 2017_
 * Fix app background color
+* Improve minimap
 
 ### 0.12.0
 _May 19, 2017_

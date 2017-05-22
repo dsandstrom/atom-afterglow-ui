@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.13.0
+_May 22, 2017_
+* Fix app background color
+
 ### 0.12.0
 _May 19, 2017_
 * Improve spinner

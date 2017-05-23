@@ -1,17 +1,19 @@
 @status-bar-height: @component-padding*1.5;
 @status-bar-padding: @component-padding;
 
-.status-bar {
+status-bar {
   font-size: @font-size;
   height: @status-bar-height;
   line-height: @status-bar-height;
   color: @status-bar-text-color;
 
   a {
-    color: @status-bar-anchor-color;
+    &:not(.text-error):not(.text-warning):not(.text-info) {
+      color: @status-bar-anchor-color;
 
-    &:hover {
-      color: @status-bar-anchor-hover-color;
+      &:hover {
+        color: @status-bar-anchor-hover-color;
+      }
     }
   }
 
@@ -54,10 +56,12 @@
 
   &:hover {
     a {
-      text-decoration: underline;
+      &:not(.text-error):not(.text-warning):not(.text-info) {
+        text-decoration: underline;
 
-      &:hover {
-        color: @status-bar-anchor-hover-color;
+        &:hover {
+          color: @status-bar-anchor-hover-color;
+        }
       }
     }
   }

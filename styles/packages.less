@@ -89,3 +89,28 @@
 atom-text-editor-minimap {
 	background: @scrollbar-background-color;
 }
+
+// todo-show ---------------------------
+// TODO: use theme spinner
+.show-todo-preview {
+  background: @tree-view-background-color;
+
+  // TODO: use mixin with settings
+	atom-text-editor[mini] {
+		background: @oil;
+
+		&.is-focused {
+			background: @tuatara;
+		}
+	}
+
+  .todo-table tr {
+    &:nth-child(2n + 1) {
+      background: @oil;
+    }
+
+    &:hover {
+      background: @tuatara;
+    }
+  }
+}

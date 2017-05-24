@@ -10,6 +10,7 @@
   background: @tab-background-color;
   overflow-x: auto;
   overflow-y: hidden;
+  border-top: @pane-border-spacing solid transparent;
 
   &::-webkit-scrollbar {
     display: none;
@@ -25,7 +26,6 @@
   .tab {
     position: relative;
     top: 0;
-    margin: 4px 0 0;
     font-size: inherit;
     line-height: @tab-height;
     padding-bottom: 2px;

@@ -1,19 +1,41 @@
 atom-dock {
+  border-width: 0;
+
   .tool-panel {
     background: @tree-view-background-color;
   }
 
-  .tab-bar .tab.active {
-    background: @tree-view-background-color;
-    border-color: @tree-view-background-color;
+  .tab-bar {
+    .tab.active {
+      background: @tree-view-background-color;
+      border-color: @tree-view-background-color;
+    }
   }
-}
 
-.tab-bar {
-  atom-dock & {
+  &.left,
+  &.right {
     .tab,
     .tab.active {
       max-width: none;
     }
+  }
+
+  &.top,
+  &.bottom {
+    .tab-bar {
+      border-width: 0;
+    }
+  }
+}
+
+.atom-dock-resize-handle {
+  &.left,
+  &.right {
+    width: @pane-border-spacing;
+  }
+
+  &.top,
+  &.bottom {
+    height: @pane-border-spacing;
   }
 }

@@ -1,8 +1,6 @@
 @import "syntax-variables";
 @import "colors";
 
-// FIXME: autocomplete bottom text
-
 // ONE dark UI variables
 // -----------------------------------
 
@@ -158,10 +156,12 @@
 
 // Sizes -------------------------------------
 
-html { font-size: 11px; }   // base font-size
+@base-font-size: 12px;
 
-@font-size:             1em;
-@input-font-size:       @font-size*1.25;
+html { font-size: @base-font-size; }   // base font-size
+
+@font-size:             @base-font-size;
+@input-font-size:       14px;
 @disclosure-arrow-size: @font-size;
 
 @component-padding:       @font-size*1.5;

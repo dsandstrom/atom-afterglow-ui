@@ -1,5 +1,12 @@
 # Change Log
 
+### 0.14.0
+_May 26, 2017_
+* Fix linter status bar colors
+* Make pane, tab, dock borders match better
+* Improve settings view, timecop, deprecation cop
+* Increase base font size
+
 ### 0.13.0
 _May 22, 2017_
 * Fix app background color

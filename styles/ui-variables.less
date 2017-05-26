@@ -34,7 +34,7 @@
 // Base colors -----------------------------------
 
 @base-accent-color:     @tuscany;
-@base-background-color: @ui-color;
+@base-background-color: @cod-gray;
 @base-border-color:     hsl(@ui-hue, @ui-saturation, @ui-lightness*.7);
 
 // Editor colors -----------------------------------
@@ -62,15 +62,16 @@
 // Component Colors -------------------------------------
 
 @app-background-color: @level-3-color;
+@dock-background-color: @mine-shaft;
 
-@tree-view-background-color:  @mine-shaft;
+@tree-view-background-color:  @dock-background-color;
 @tree-view-border-color:      @base-border-color;
 @tree-view-text-color:        @base;
 @tree-view-subtle-text-color: @steel;
 
-@tab-background-color:             @level-3-color;
-@tab-background-color-active:      @level-2-color;
-@tab-bar-background-color:         @level-3-color;
+@tab-background-color:             @base-background-color;
+@tab-background-color-active:      @mine-shaft;
+@tab-bar-background-color:         @tab-background-color;
 @tab-bar-border-color:             @base-border-color; // not used
 @tab-border-color:                 @tab-background-color;
 @tab-border-color-active:          @tab-background-color-active;
@@ -82,18 +83,18 @@
 
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @tab-background-color;
-@pane-border-spacing:        .5rem;
+@pane-border-spacing:        .4rem;
 
-@panel-heading-background-color:   @level-2-color;
+@panel-heading-background-color:   @jet;
 @panel-heading-border-color:       @base-border-color;
 
-@tool-panel-background-color:      @level-3-color;
+@tool-panel-background-color:      @base-background-color;
 @tool-panel-border-color:          @base-border-color;
 
-@inset-panel-background-color:     lighten(@level-2-color, 4%);
+@inset-panel-background-color:     @oil;
 @inset-panel-border-color:         fadeout(@base-border-color, 15%);
 
-@overlay-background-color:         @level-2-color;
+@overlay-background-color:         @jet;
 @overlay-border-color:             @base-border-color;
 @overlay-backdrop-color:           rgba(0, 0, 0, .35);
 

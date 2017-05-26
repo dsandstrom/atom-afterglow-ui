@@ -105,14 +105,23 @@
     }
   }
 
+  .tab.active[data-type="TextEditor"] {
+    background-color: @tab-background-color-editor;
+    border-color: @tab-background-color-editor;
+  }
+
   .tab.modified {
-    border-color: @base-accent-color;
+    &,
+    &[data-type="TextEditor"] {
+      border-color: @base-accent-color;
+    }
 
     .close-icon {
       color: @tab-icon-color;
       border: none;
       border-bottom: @tab-border-size solid transparent;
     }
+
     &:not(:hover) .close-icon {
       // TODO: make this a mixin iasdf
       right: 0;
@@ -129,6 +138,7 @@
         color: inherit;
       }
     }
+
     &:not(.hover):not(.active) {
       .close-icon {
         transform: scale(0);
@@ -182,11 +192,6 @@
     &:after {
       visibility: hidden;
     }
-  }
-
-  .tab.active[data-type="TextEditor"] {
-    color: @tab-text-color-editor;
-    background-color: @tab-background-color-editor;
   }
 
   .placeholder {

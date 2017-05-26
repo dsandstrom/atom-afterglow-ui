@@ -93,7 +93,7 @@ atom-text-editor-minimap {
 // todo-show ---------------------------
 // TODO: use theme spinner
 .show-todo-preview {
-  background: @tree-view-background-color;
+  background: @dock-background-color;
 
   // TODO: use mixin with settings
 	atom-text-editor[mini] {
@@ -106,11 +106,28 @@ atom-text-editor-minimap {
 
   .todo-table tr {
     &:nth-child(2n + 1) {
-      background: @oil;
+      background: @panel-heading-background-color;
     }
 
     &:hover {
       background: @tuatara;
     }
+  }
+}
+
+// deprecation-cop ---------------------------
+.deprecation-cop {
+  background: @dock-background-color !important;
+
+  .panel {
+    background: transparent;
+  }
+}
+
+// timecop ---------------------------
+.timecop {
+  .timecop-panel,
+  .tool-panel {
+    background: transparent;
   }
 }

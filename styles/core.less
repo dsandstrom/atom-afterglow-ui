@@ -1,5 +1,9 @@
 // Misc
 
+.preview-pane .preview-header {
+  background: transparent;
+}
+
 .preview-pane .results-view .path-match-number {
   // show number also on selected item
   color: inherit;
@@ -47,12 +51,13 @@ atom-notifications {
     .example-rendered {
       border: 1px solid @base-border-color;
       border-right: none;
-      background: @base-background-color;
+      background: @inset-panel-background-color;
     }
 
     .example-code {
       border: 1px solid @base-border-color;
       border-radius: 0 @component-border-radius @component-border-radius 0;
+      background: @ui-editor-background-color;
     }
   }
 
@@ -77,5 +82,8 @@ atom-notifications {
   .popover-list atom-text-editor[mini] {
     height: initial;
   }
+}
 
+.styleguide-sections > section {
+  background: transparent;
 }

@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.15.0
+_June 2, 2017_
+* Darken autocomplete popover
+
 ### 0.14.0
 _May 26, 2017_
 * Fix linter status bar colors

@@ -1,6 +1,7 @@
 {
   "name": "afterglow-ui",
   "theme": "ui",
+  "main": "./lib/main",
   "version": "0.16.0",
   "description": "Afterglow UI",
   "license": "MIT",

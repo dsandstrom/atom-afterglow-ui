@@ -4,21 +4,64 @@
 // TODO: make markdown preview editor match tab
 
 // find-and-replace ---------------------------
-// TODO: make option buttons group match find button width
 .find-and-replace,
 .project-find {
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .header-item {
+    margin: 0;
+    border: 0 solid transparent;
+    border-right-width: 1rem;
+
+    &:last-child {
+      border-width: 0;
+    }
+  }
+
+  .description {
+    flex: 1 1 auto;
+  }
+
+  .header,
+  .input-block {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-group,
+  .input-block-item {
+    flex: 0 0 15rem;
+  }
+
+  .input-block-item {
+    padding: 0;
+    border-right: 1.5rem solid transparent;
+
+    &.editor-container {
+      flex: 1;
+    }
+
+    &:last-child {
+      border-width: 0;
+    }
+
+    .btn-group {
+      flex: 1 0 50%;
+    }
   }
 
   .options-label {
     float: none;
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    flex: 1 1 auto;
     justify-content: flex-end;
+    flex-wrap: wrap;
 
     > span {
       white-space: nowrap;
@@ -37,32 +80,12 @@
   .btn-group-options.btn-group .btn,
   .btn-group-options.btn-group .btn.option-selection,
   .btn-group-options.btn-group .btn.option-whole-word {
-    font-size: @font-size*1.25;
+    font-size: 1.2rem;
     padding: 0;
   }
 
-  .btn-group {
-    &.btn-group-options {
-      flex: 0 0 13.5em;
-
-      & > .btn {
-        flex: 1;
-        min-height: 29px;
-      }
-
-      .btn.option-selection {
-        padding-top: 0;
-      }
-    }
-
-    &.btn-group-replace-all {
-      width: @font-size * 10;
-    }
-
-    &.btn-group-find,
-    &.btn-group-replace {
-      width: @font-size * 7.5;
-    }
+  .btn-group + .btn-group {
+    margin: 0;
   }
 
   .find-meta-container {
@@ -71,10 +94,17 @@
     bottom: 0;
     display: flex;
     align-items: center;
+    margin: 0;
+    padding-right: @component-padding / 2;
+
+    .result-counter {
+      margin: 0;
+    }
   }
 
   .close-button {
-    margin: 0 1rem 0 0;
+    margin: 0;
+    border-right: 1rem solid transparent;
     padding-bottom: .3em;
     color: @text-color-error;
 

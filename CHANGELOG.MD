@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.16.0
+_June 7, 2017_
+* Improve find-and-replace panels
+
 ### 0.15.0
 _June 2, 2017_
 * Darken autocomplete popover

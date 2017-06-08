@@ -1,14 +1,16 @@
 atom-dock {
   border-width: 0;
 
-  .tool-panel {
-    background: @tree-view-background-color;
-  }
-
   .tab-bar {
     .tab.active {
       background: @tree-view-background-color;
       border-color: @tree-view-background-color;
+    }
+  }
+
+  .item-views {
+    > div {
+      background: @tree-view-background-color;
     }
   }
 

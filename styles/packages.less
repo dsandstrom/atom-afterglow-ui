@@ -3,7 +3,6 @@
 // FIXME: welcome guide page
 // TODO: make markdown preview editor match tab
 // TODO: make hint background dark (when no tabs open)
-// TODO: improve vim-mode-plus search bar
 
 // find-and-replace ---------------------------
 .find-and-replace,
@@ -141,6 +140,23 @@
   border: 1px solid @input-background-color-focus;
   border-radius: 0;
   overflow: hidden;
+}
+
+// vim-mode-plus ---------------------------
+.vim-mode-plus-search-container {
+  padding: @component-padding;
+
+  > div {
+    padding: 0;
+  }
+
+  .options-container {
+    order: 2;
+  }
+
+  .editor-container {
+    order: 1;
+  }
 }
 
 // minimap ---------------------------

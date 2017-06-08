@@ -159,6 +159,26 @@
   }
 }
 
+// ex-mode ---------------------------
+div[is=ex-command-mode-input] {
+  padding: @component-padding;
+
+  atom-text-editor[mini] {
+    overflow: hidden;
+
+    &::before {
+      opacity: 1;
+      font-size: 1.2em;
+      padding-right: 0.5em;
+    }
+  }
+}
+
+.command-mode-input atom-text-editor[mini] {
+  line-height: @component-line-height;
+  padding-left: @component-padding / 2;
+}
+
 // minimap ---------------------------
 atom-text-editor-minimap {
 	background: @scrollbar-background-color;

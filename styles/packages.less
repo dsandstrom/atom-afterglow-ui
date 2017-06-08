@@ -159,12 +159,17 @@
   }
 }
 
+atom-text-editor[mini].vim-mode-plus-search {
+  border: 1px solid @input-border-color;
+}
+
 // ex-mode ---------------------------
 div[is=ex-command-mode-input] {
   padding: @component-padding;
 
   atom-text-editor[mini] {
     overflow: hidden;
+    border: 1px solid @input-border-color;
 
     &::before {
       opacity: 1;

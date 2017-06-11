@@ -126,4 +126,20 @@ atom-pane-container atom-pane .item-views .pane-item,
 			background: @tuatara;
 		}
 	}
+
+  // input
+  .section {
+    atom-text-editor[mini] {
+      .selection .region {
+        background-color: @input-selection-color;
+      }
+
+      &.is-focused,
+      &.is-focused.editor {
+        .selection .region {
+          background-color: @input-selection-color-focus;
+        }
+      }
+    }
+  }
 }

@@ -227,6 +227,15 @@ atom-text-editor-minimap {
   background: transparent;
 }
 
+#linter-tooltip linter-message {
+  &,
+  &.error
+  &.warning,
+  &.info {
+    background: @cod-gray;
+  }
+}
+
 // welcome ---------------------------
 .welcome {
   background: @dock-background-color;

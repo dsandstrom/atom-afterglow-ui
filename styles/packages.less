@@ -183,8 +183,6 @@ atom-text-editor-minimap {
 // todo-show ---------------------------
 // TODO: use theme spinner
 .show-todo-preview {
-  background: @dock-background-color;
-
   // TODO: use mixin with settings
 	atom-text-editor[mini] {
 		background: @oil;
@@ -207,6 +205,7 @@ atom-text-editor-minimap {
 
 // deprecation-cop ---------------------------
 .deprecation-cop {
+  // https://github.com/atom/deprecation-cop/issues/82
   background: @dock-background-color !important;
 
   .panel {
@@ -237,9 +236,6 @@ atom-text-editor-minimap {
 }
 
 // welcome ---------------------------
-.welcome {
-  background: @dock-background-color;
-}
 
 .welcome-card {
   background: @inset-panel-background-color;

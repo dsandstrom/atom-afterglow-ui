@@ -1,5 +1,11 @@
 # Change Log
 
+### 0.17.0
+_June 12, 2017_
+* Improve find-and-replace, vim-mode-plus, ex-mode, welcome, settings, linter
+* Improve button/alert backgrounds
+* Increase base font size
+
 ### 0.16.0
 _June 7, 2017_
 * Improve find-and-replace panels

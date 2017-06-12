@@ -40,6 +40,8 @@
   li:not(.list-nested-item).selected,
   li.list-nested-item.selected > .list-item {
     .text(selected);
+    // FIXME: should be in mixin
+    color: @text-color-selected;
   }
 
   .no-icon {
@@ -120,6 +122,13 @@
 autocomplete-suggestion-list.select-list.popover-list {
   ol.list-group {
     margin-right: @scrollbar-width;
+
+    li.selected {
+      &,
+      .word {
+        color: @text-color-selected;
+      }
+    }
   }
 
   .suggestion-description {

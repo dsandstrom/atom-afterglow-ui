@@ -17,18 +17,32 @@
 }
 
 atom-notifications {
-  font-size: 14px;
+  top: @tab-height + 2rem;
+  right: 1rem;
+  font-size: 1rem;
+
   atom-notification {
+    margin-bottom: .5rem;
+
+    p,
+    ul,
+    ol {
+      margin-bottom: .5rem;
+    }
+
     &:first-child.has-close .message {
       padding-right: 120px;
     }
+
     &:only-child.has-close .message,
     &.has-close .message {
       padding-right: 40px;
     }
+
     .item {
       padding: @component-padding/2;
     }
+
     &.icon:before {
       padding-top: .85em;
     }

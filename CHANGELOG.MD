@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.18.0
+_June 12, 2017_
+* Go back to white as the selected color, instead use accent for matching characters
+
 ### 0.17.0
 _June 12, 2017_
 * Improve find-and-replace, vim-mode-plus, ex-mode, welcome, settings, linter

@@ -242,3 +242,26 @@ atom-text-editor-minimap {
   background: @inset-panel-background-color;
   border-color: @inset-panel-border-color;
 }
+
+// key-binding-resolver ---------------------------
+.key-binding-resolver {
+  .panel-heading {
+    display: flex;
+    align-items: center;
+
+    span:first-child {
+      margin-right: 1rem;
+    }
+  }
+
+  // IDEA: separate keystrokes
+  .keystroke {
+    color: @base-accent-color;
+    font-family: monospace;
+    font-weight: bold;
+    border: 2px solid @base-accent-color;
+    border-radius: 3px;
+    padding: .2rem .4rem;
+    font-size: .9rem;
+  }
+}

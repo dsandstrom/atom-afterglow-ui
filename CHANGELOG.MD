@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.19.0
+_June 14, 2017_
+* Improve notifications, styleguide, keybinding-resolver, markdown-preview
+
 ### 0.18.0
 _June 12, 2017_
 * Go back to white as the selected color, instead use accent for matching characters

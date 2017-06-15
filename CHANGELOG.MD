@@ -1,5 +1,10 @@
 # Change Log
 
+### 0.20.0
+_June 15, 2017_
+* Change accent color to blue
+* Improve welcome, panels, buttons
+
 ### 0.19.0
 _June 14, 2017_
 * Improve notifications, styleguide, keybinding-resolver, markdown-preview

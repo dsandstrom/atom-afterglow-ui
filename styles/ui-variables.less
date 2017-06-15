@@ -27,6 +27,7 @@
 
 // Config -----------------------------------
 
+// TODO: remove hsl variables
 @ui-hue:        hue(@ui-a-color);
 @ui-saturation: saturation(@ui-a-color);
 @ui-lightness:  lightness(@ui-a-color);
@@ -52,11 +53,10 @@
 
 // Var + State Background Colors -------------------------------------
 
-@background-color-info:    @ship-cove;
-// TODO: make bg colors more different than accent color
-@background-color-success: darken(@wild-willow, 20%);
-@background-color-warning: darken(@equator, 10%);
-@background-color-error:   darken(@tuscany, 10%);
+@background-color-info:    darken(@text-color-info, 10%);
+@background-color-success: darken(@text-color-success, 20%);
+@background-color-warning: darken(@text-color-warning, 15%);
+@background-color-error:   darken(@text-color-error, 10%);
 
 @background-color-highlight: @tuatara;
 @background-color-selected: @tuatara;

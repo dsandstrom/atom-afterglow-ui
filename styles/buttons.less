@@ -8,7 +8,6 @@
   text-shadow: none;
   border: @btn-border;
   background-color: @color;
-  background-image: linear-gradient(lighten(@color, 2%), @color);
 
   &:focus {
     //.focus(); // disabled for now, since :focus styles stay even after releasing mouse.
@@ -17,7 +16,6 @@
   &:focus,
   &:hover {
     color: @text-color-highlight;
-    background-image: linear-gradient(lighten(@hover-color, 2%), @hover-color);
   }
   &:active {
     background: darken(@color, 4%);

@@ -1,4 +1,4 @@
-@modal-padding: @component-padding/2 @component-padding/1.5;
+@modal-padding: @component-padding;
 
 atom-panel.modal {
   width: @font-size * 40;
@@ -25,6 +25,7 @@ atom-panel.modal {
       padding: @modal-padding;
       border-bottom: 1px solid @overlay-border-color;
       overflow: hidden;
+      line-height: 1.5;
 
       &:last-of-type {
         border-bottom: none;
@@ -54,7 +55,6 @@ atom-panel.modal {
   & > * {
     position: relative; // fixes stacking order
   }
-
 
   // Container
   &:before {
@@ -90,5 +90,4 @@ atom-panel.modal {
     0% { opacity: 0; }
     100% { opacity: 1; }
   }
-
 }

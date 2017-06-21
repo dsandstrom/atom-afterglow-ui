@@ -1,5 +1,9 @@
 # Change Log
 
+### 0.21.0
+_June 21, 2017_
+* Improve modal select list
+
 ### 0.20.0
 _June 15, 2017_
 * Change accent color to blue

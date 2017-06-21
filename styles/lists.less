@@ -45,7 +45,7 @@
   }
 
   .no-icon {
-    padding-left: calc(@component-icon-padding ~"+" @component-icon-size);
+    padding-left: 0;
   }
 
   .character-match {
@@ -61,9 +61,20 @@
 .select-list ol.list-group,
 &.select-list ol.list-group {
   li.two-lines {
+    .icon {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+
+      &:before {
+        margin-right: .4rem;
+      }
+    }
+
     .secondary-line {
       color: @text-color-subtle;
     }
+
     &.selected .secondary-line {
       color: fade(@text-color-highlight, 50%);
       text-shadow: none;

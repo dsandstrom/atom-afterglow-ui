@@ -2,7 +2,7 @@
   "name": "afterglow-ui",
   "theme": "ui",
   "version": "0.21.0",
-  "description": "Afterglow UI",
+  "description": "Minimal, dark, and flat UI made for Afterglow syntax",
   "license": "MIT",
   "repository": "https://github.com/dsandstrom/atom-afterglow-ui",
   "engines": {

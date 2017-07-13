@@ -84,8 +84,8 @@
   // We want to highlight the background of the list items because we dont
   // know their size.
   li.selected {
-    background-color: @background-color-selected;
-    &:before{ display: none; }
+    background-color: @inset-panel-background-color-selected;
+    &:before { display: none; }
   }
 
   &.mark-active {
@@ -117,7 +117,7 @@
 }
 
 .select-list.popover-list {
-  background-color: @mine-shaft;
+  background-color: @inset-panel-background-color;
   box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.3);
   padding: @component-padding/2;
   border-radius: @component-border-radius;
@@ -148,7 +148,7 @@ autocomplete-suggestion-list.select-list.popover-list {
   }
 
   .suggestion-description {
-    background: @cod-gray;
+    background: @inset-panel-border-color;
   }
 }
 

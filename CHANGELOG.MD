@@ -1,5 +1,10 @@
 # Change Log
 
+### 0.22.0
+_February 19 2018_
+* Adjust scrollbar and tooltip colors
+* Fix height of form selects
+
 ### 0.21.0
 _June 21, 2017_
 * Improve modal select list

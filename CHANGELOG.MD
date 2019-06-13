@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.0.0
+_June 13 2019_
+* Fix settings-view sub headings
+
 ### 0.22.0
 _February 19 2018_
 * Adjust scrollbar and tooltip colors

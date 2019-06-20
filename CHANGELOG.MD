@@ -2,7 +2,7 @@
 
 ### 1.1.0
 _June 20, 2019_
-* Fix settings-view breadcrumb
+* Fix settings-view heading background color
 
 ### 1.0.0
 _June 13, 2019_

@@ -1,7 +1,11 @@
 # Change Log
 
+### 1.1.0
+_June 20, 2019_
+* Fix settings-view breadcrumb
+
 ### 1.0.0
-_June 13 2019_
+_June 13, 2019_
 * Fix settings-view sub headings
 
 ### 0.22.0

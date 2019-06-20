@@ -8,4 +8,4 @@ This is a dark and flat UI theme to match the [Afterglow syntax theme](https://a
 ![Afterglow UI](https://cloud.githubusercontent.com/assets/1400414/26226866/b84b91bc-3be3-11e7-9829-0fa4e8d77b92.png)
 
 ### Notes
-* In beta, issues and pull requests are welcome.
+* Issues and pull requests are welcome.

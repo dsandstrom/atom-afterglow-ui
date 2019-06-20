@@ -260,7 +260,8 @@ atom-text-editor-minimap {
   .panel-heading {
     display: flex;
     align-items: center;
-    background: transparent;
+    background-color: @dock-background-color;
+    border-bottom: 1px solid @base-border-color;
 
     span:first-child {
       margin-right: 1rem;
@@ -277,5 +278,6 @@ atom-text-editor-minimap {
     border-radius: 3px;
     padding: .2rem .4rem;
     font-size: 1rem;
+    background-color: transparent;
   }
 }

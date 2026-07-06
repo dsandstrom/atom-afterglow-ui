@@ -3,7 +3,7 @@
 @tab-border: @tab-border-size solid @tab-border-color;
 @tab-max-width: 22em;
 @tab-min-width: @font-size*3.2;
-@tab-padding: @component-padding/1.5;
+@tab-padding: (@component-padding/1.5);
 
 .tab-bar {
   height: auto;
@@ -204,7 +204,7 @@
     background: @base-accent-color;
     pointer-events: none;
     &:after {
-      top: @tab-height/2;
+      top: (@tab-height/2);
       width: 10px;
       height: 10px;
       margin: -5px 0 0 0;
